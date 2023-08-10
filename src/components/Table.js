@@ -13,13 +13,14 @@ const Table = ({ sat }) => {
         </thead>
         <tbody>
         {sat.map((id, data) => {
+          return( 
         <tr key={id}>
           <td>{data.name}</td>
           <td>{data.type}</td>
           <td>{data.launchDate}</td>
-          <td>{data.operational}</td>//"create a conditional that will tell a user if a satellite is active or inactive based on its operational value."
+          <td>{data.operational===true ? "Active" : "Inactive"}</td>
         </tr>
-        }
+        )}
         )};
         </tbody>
       </table>
