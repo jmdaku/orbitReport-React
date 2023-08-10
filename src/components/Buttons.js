@@ -1,13 +1,11 @@
 import satData from "./components/satData.js";
+import "./styling.css";
 import App from "../App.js";
 import { filterByType , setSat , displaySats } from "../App.js";
 
-
-
-
 const Buttons = () => {
   return (
-    <div>
+    <div className="flex-container">
       {displaySats.map((sat, id) => {
          return (
            <button onClick={() => filterByType(sat)} key={id}>
@@ -15,7 +13,6 @@ const Buttons = () => {
            </button>
         );
       })}
-
 
       <button onClick={() => {
         setSat(satData)}
