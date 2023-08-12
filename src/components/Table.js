@@ -12,17 +12,17 @@ const Table = ({ sat }) => {
         </tr>
         </thead>
         <tbody>
-        {sat.map((id, data) => {
-          return( 
-        <tr key={id}>
-          <td>{data.name}</td>
-          <td>{data.type}</td>
-          <td>{data.launchDate}</td>
-          <td>{data.operational===true ? "Active" : "Inactive"}</td>
-        </tr>
-        )}
-        )};
-        </tbody>
+           {sat.map((id, data) => {
+             return( 
+                <tr key={id}>
+                  <td>{data.name}</td>
+                  <td>{data.type}</td>
+                  <td>{data.launchDate}</td>
+                  <td>{data.operational===true ? "Active" : "Inactive"}</td>
+                </tr>
+              )}
+           )};
+       </tbody>
       </table>
   );
 };

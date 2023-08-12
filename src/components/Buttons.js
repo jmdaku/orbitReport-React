@@ -13,11 +13,11 @@ const Buttons = () => {
            </button>
         );
       })}
-
       <button onClick={() => {
         App.setSat(satData)}
       }
       >All Orbits </button>
+      
   </div>
   );
 };

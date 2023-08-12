@@ -29,3 +29,4 @@ function App() {
 }
 
 export default App;
+//error = App not a function but matches code in assignment instructions
