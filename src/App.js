@@ -4,12 +4,11 @@ import Banner from "./components/Banner";
 import { useState } from "react";
 import satData from "./components/satData.js";
 
-
 function App() {
   const [sat, setSat] = useState(satData);
   const displaySats = [...new Set(satData.map((data) => data.orbitType))];
   const filterByType = (currentType) => {
-    const displaySats = satData.filter((newSatDisplay) => {
+     const displaySats = satData.filter((newSatDisplay) => {
        return newSatDisplay.orbitType === currentType;
     });
     setSat(displaySats);
@@ -29,4 +28,4 @@ function App() {
 }
 
 export default App;
-//error = App not a function but matches code in assignment instructions
+//error = default.displaySats is undefined but matches code in assignment instructions

@@ -16,7 +16,7 @@ const Table = ({ sat }) => {
         </thead>
         <tbody>
            {sat.map((id, data) => {
-             return( 
+             return(
                 <tr key={id}>
                   <td>{data.name}</td>
                   <td>{data.type}</td>
