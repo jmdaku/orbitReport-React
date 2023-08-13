@@ -28,4 +28,3 @@ function App() {
 }
 
 export default App;
-//error = default.displaySats is undefined but matches code in assignment instructions

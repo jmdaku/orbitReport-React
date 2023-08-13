@@ -1,10 +1,7 @@
 import satData from "./satData.js";
 import "./styling.css";
-import App from "../App.js";
-//import { displaySats, filterByType, setSat } from "../App.js";
 
-const Buttons = () => {
-  const { displaySats, filterByType, setSat } = App;
+const Buttons = ({ displaySats, filterByType, setSat }) => {
   return (
     <div className="flex-container">
       {displaySats.map((sat, id) => {  
